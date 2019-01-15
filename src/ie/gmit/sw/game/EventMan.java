@@ -6,11 +6,11 @@ import ie.gmit.sw.Direction;
 import ie.gmit.sw.GameView;
 import ie.gmit.sw.Sprite;
 
-public class Event implements KeyListener {
+public class EventMan implements KeyListener {
 
 	protected Sprite player;
 	
-	public Event(Sprite player) {
+	public EventMan(Sprite player) {
 		this.player = player;
 	}
 

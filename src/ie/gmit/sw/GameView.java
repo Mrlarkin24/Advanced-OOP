@@ -154,28 +154,4 @@ public class GameView extends JPanel implements ActionListener {
 		}
 		return instance;
 	}
-	
-	/*public void keyPressed(KeyEvent e) {
-		if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-			player.setDirection(Direction.RIGHT);
-		} else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-			player.setDirection(Direction.LEFT);
-		} else if (e.getKeyCode() == KeyEvent.VK_UP) {
-			player.setDirection(Direction.UP);
-		} else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-			player.setDirection(Direction.DOWN);
-		} else if (e.getKeyCode() == KeyEvent.VK_Z) {
-			toggleView();
-		} else if (e.getKeyCode() == KeyEvent.VK_X) {
-			player.move();
-		} else {
-			return;
-		}
-	}
-	
-	public void keyReleased(KeyEvent e) {
-	} // Ignore
-	
-	public void keyTyped(KeyEvent e) {
-	} // Ignore*/
 }

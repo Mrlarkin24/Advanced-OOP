@@ -1,10 +1,11 @@
 package ie.gmit.sw;
 
 import java.awt.*;
-import java.awt.event.KeyListener;
 import javax.swing.*;
 
+import ie.gmit.sw.game.EventMan;
 import ie.gmit.sw.sprites.SpriteFactory;
+
 public class GameWindow {
 	private static GameWindow instance = null;
 	/*
@@ -44,7 +45,7 @@ public class GameWindow {
 		
 		player = SpriteFactory.playerInstance();
 		GameView view = new GameView(model, objects, player);
-		Event event = new Event(player);
+		EventMan eventMan = new EventMan(player);
 		Dimension d = new Dimension(GameView.DEFAULT_VIEW_SIZE, GameView.DEFAULT_VIEW_SIZE/2);
 		view.setPreferredSize(d);
 		view.setMinimumSize(d);
@@ -54,7 +55,7 @@ public class GameWindow {
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.getContentPane().setLayout(new FlowLayout());
 		f.add(view);
-		f.addKeyListener(event);
+		f.addKeyListener(eventMan);
 		f.setSize(1000, 1000);
 		f.setLocation(100, 100);
 		f.pack();

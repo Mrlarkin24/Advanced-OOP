@@ -1,7 +1,5 @@
 package ie.gmit.sw.sprites;
 
-import java.awt.image.BufferedImage;
-
 import ie.gmit.sw.Sprite;
 
 public class SpriteFactory {

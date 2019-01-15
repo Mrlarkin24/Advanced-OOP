@@ -14,6 +14,7 @@ package ie.gmit.sw;
 import java.awt.image.*;
 
 import ie.gmit.sw.sprites.Point;
+
 public class Sprite { //Sprite belongs in some sort of hierarchy....
 	private String name; //The name of the sprite
 	private BufferedImage[][] images = new BufferedImage[4][3]; //The images used in the animation 
